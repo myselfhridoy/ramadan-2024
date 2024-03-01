@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ramadan Countdown</title>
+  <script>
+    // Function to convert numbers to Bengali numerals
+    function convertToBengali(number) {
+      var bengaliNumbers = ["০", "১", "২", "৩", "৪", "৫", "৬", "৭", "৮", "৯"];
+      return number.toString().split('').map(digit => bengaliNumbers[parseInt(digit)]).join('');
+    }
+    
+    // Function to calculate and display the countdown
+    function countdown(targetDate, elementId) {
+      // Set the target date and time for iftar/sehri
+      var targetTime = new Date(targetDate).getTime();
+      
+      // Update the countdown every second
+      var countdownInterval = setInterval(function() {
+        var currentTime = new Date().getTime();
+        var timeDifference = targetTime - currentTime;
+        
+        // Calculate hours, minutes, and seconds
+        var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+        
+        // Convert hours, minutes, and seconds to Bengali numerals
+        var bengaliHours = convertToBengali(hours);
+        var bengaliMinutes = convertToBengali(minutes);
+        var bengaliSeconds = convertToBengali(seconds);
+        
+        // Display the countdown in Bengali
+        document.getElementById(elementId).innerHTML = bengaliHours + " " + "ঘন্টা " + bengaliMinutes + " " + "মিনিট " + bengaliSeconds + " " + "সেকেন্ড ";
+        
+        // If the countdown is over, display a message
+        if (timeDifference < 0) {
+          clearInterval(countdownInterval);
+          document.getElementById(elementId).innerHTML = "সময় শেষ!";
+        }
+      }, 1000);
+    }
+    
+    // Start the countdown for iftar and sehri
+    window.onload = function() {
+      var iftarDate = new Date(2024, 2, 1, 18, 30, 0); // March 1, 2024, 18:30:00
+      countdown(iftarDate, "iftar-countdown");
+      
+      var sehriDate = new Date(2024, 2, 2, 4, 30, 0); // March 2, 2024, 04:30:00
+      countdown(sehriDate, "sehri-countdown");
+    };
+  </script>
+</head>
+<body>
+  <h2>ইফতার কাউন্টডাউন:</h2>
+  <div id="iftar-countdown"></div>
+  
+  <h2>সেহরি কাউন্টডাউন:</h2>
+  <div id="sehri-countdown"></div>
+</body>
+</html>

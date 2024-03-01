@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -30,35 +30,60 @@
     <main>
         <section class="bnner-section">
             <div class="hero h-96 w-auto" style="background-image: url(images/banner.jpg);">
-                <div class="hero"></div>
+                <div class="hero">
+                </div>
                 <div class="hero-content text-center text-neutral-content">
                 </div>
+
             </div>
         </section>
 
         <section class="ramadan-table">
-            <div class="text-center p-16">
-                <h1 class="font-baloo-da mb-5 lg:text-5xl md:text-4xl sm:text-3xl font-semibold text-orange-400">রমজানের
+            <div class="text-center p-5">
+                <div class="flex flex-row justify-between place-items-center m-5">
+                    <div>
+                        <!-- The button to open modal -->
+                        <label for="my_modal_7" class="btn">রোজার নিয়ত</label>
+
+                        <input type="checkbox" id="my_modal_7" class="modal-toggle" />
+                        <div class="modal" role="dialog">
+                            <div class="modal-box">
+                                <h3 class="text-lg font-bold">রোজার নিয়ত বাংলা</h3>
+                                <p class="py-4">হে আল্লাহ! আমি আগামীকাল পবিত্র রমজানের রোজা রাখার নিয়ত করছি, যা আপনার
+                                    সন্তুষ্টির জন্য ফরজ করা হয়েছে। অতএব,আমার পক্ষ থেকে তা কবুল করুন। নিশ্চয়ই আপনি
+                                    সর্বশ্রোতা ও সর্বজ্ঞ।</p>
+                            </div>
+                            <label class="modal-backdrop" for="my_modal_7">Close</label>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- The button to open modal -->
+                        <label for="my_modal_8" class="btn">ইফতারের দোয়া</label>
+
+                        <input type="checkbox" id="my_modal_8" class="modal-toggle" />
+                        <div class="modal" role="dialog">
+                            <div class="modal-box">
+                                <h3 class="text-lg font-bold">ইফতারের দোয়া বাংলা</h3>
+                                <p class="py-4">হে আল্লাহ! আমি আপনার উদ্দেশে রোজা রেখেছি এবং আপনার দেওয়া রিজিক দিয়ে
+                                    ইফতার করছি । আপনি আমার রোজা কবুল করুন।</p>
+                            </div>
+                            <label class="modal-backdrop" for="my_modal_8">Close</label>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="font-baloo-da mb-5 lg:text-6xl font-semibold text-orange-400">রমজানের
                     সাহ্‌রি ও
                     ইফতারের
                     সময়সূচি -
                     ২০২৪
                 </h1>
-                <p class="font-hind-siliguri-regular mb-5">রমজান মাসের চাঁদ দেখা সাপেক্ষে এ বছর রোজা শুরু হতে পারে ১২ বা
-                    ১৩
-                    মার্চ। সে হিসাবে ১২ মার্চ ধরে ঢাকার সাহ্‌রি ও ইফতারের সময়সূচি নির্ধারণ করেছে ইসলামিক
-                    ফাউন্ডেশন। সময়সূচি অনুযায়ী, ১২ মার্চ প্রথম রোজার সাহ্‌রির শেষ সময় ভোর ৪টা ৫১ মিনিট ও ইফতারির
-                    সময় ৬টা ১০ মিনিট।</p>
-                <p class="font-hind-siliguri-regular">দূরত্ব অনুযায়ী ঢাকার সময়ের সঙ্গে সর্বোচ্চ ৯ মিনিট যোগ করে অথবা ৯
-                    মিনিট বিয়োগ করে দেশের
-                    বিভিন্ন অঞ্চলের মানুষ সাহ্‌রি ও ইফতার করবেন।</p>
             </div>
-            <div class="lg:p-5">
-                <div class="font-baloo-da font-normal text-lg text-white border">
+            <div class="">
+                <div class="font-baloo-da font-normal text-lg lg:mx-10">
                     <div class="overflow-x-auto">
-                        <table class="table table-xs text-center -mx-2">
+                        <table class="table table-xs text-center">
                             <!-- head -->
-                            <thead class="text-white text-base">
+                            <thead class="text-base">
                                 <tr>
                                     <th>রোজা</th>
                                     <th>মার্চ/এপ্রিল</th>
@@ -98,7 +123,7 @@
                                 </tr>
                                 <!-- row 4 -->
                                 <tr>
-                                    <td>০8</td>
+                                    <th>০8</th>
                                     <td>১৫ মার্চ</td>
                                     <td>শুক্রবার</td>
                                     <td>৪-৪৮ মি.</td>
@@ -107,7 +132,7 @@
                                 </tr>
                                 <!-- row 5 -->
                                 <tr>
-                                    <td>০৫</td>
+                                    <th>০৫</th>
                                     <td>১৬ মার্চ</td>
                                     <td>শনিবার</td>
                                     <td>৪-৪৭ মি.</td>
@@ -116,7 +141,7 @@
                                 </tr>
                                 <!-- row 6 -->
                                 <tr>
-                                    <td>০৬</td>
+                                    <th>০৬</th>
                                     <td>১৭ মার্চ</td>
                                     <td>রবিবার</td>
                                     <td>৪-৪৬ মি.</td>
@@ -125,7 +150,7 @@
                                 </tr>
                                 <!-- row 7 -->
                                 <tr>
-                                    <td>০৭</td>
+                                    <th>০৭</th>
                                     <td>১৮ মার্চ</td>
                                     <td>সোমবার</td>
                                     <td>৪-৪৫ মি.</td>
@@ -134,7 +159,7 @@
                                 </tr>
                                 <!-- row 8 -->
                                 <tr>
-                                    <td>০৮</td>
+                                    <th>০৮</th>
                                     <td>১৯ মার্চ</td>
                                     <td>মঙ্গলবার</td>
                                     <td>৪-৪৪ মি.</td>
@@ -143,7 +168,7 @@
                                 </tr>
                                 <!-- row 9 -->
                                 <tr>
-                                    <td>০৯</td>
+                                    <th>০৯</th>
                                     <td>২০ মার্চ</td>
                                     <td>বুধবার</td>
                                     <td>৪-৪৩ মি.</td>
@@ -152,7 +177,7 @@
                                 </tr>
                                 <!-- row 10 -->
                                 <tr>
-                                    <td>১০</td>
+                                    <th>১০</th>
                                     <td>২১ মার্চ</td>
                                     <td>বৃহস্পতিবার</td>
                                     <td>৪-৪২ মি.</td>
@@ -161,7 +186,7 @@
                                 </tr>
                                 <!-- row 11 -->
                                 <tr>
-                                    <td>১১</td>
+                                    <th>১১</th>
                                     <td>২২ মার্চ</td>
                                     <td>শুক্রবার</td>
                                     <td>৪-৪১ মি.</td>
@@ -170,7 +195,7 @@
                                 </tr>
                                 <!-- row 12 -->
                                 <tr>
-                                    <td>১২</td>
+                                    <th>১২</th>
                                     <td>২৩ মার্চ</td>
                                     <td>শনিবার</td>
                                     <td>৪-৪০ মি.</td>
@@ -179,7 +204,7 @@
                                 </tr>
                                 <!-- row 13 -->
                                 <tr>
-                                    <td>১৩</td>
+                                    <th>১৩</th>
                                     <td>২৪ মার্চ</td>
                                     <td>রবিবার</td>
                                     <td>৪-৩৯ মি.</td>
@@ -188,7 +213,7 @@
                                 </tr>
                                 <!-- row 14 -->
                                 <tr>
-                                    <td>১৪</td>
+                                    <th>১৪</th>
                                     <td>২৫ মার্চ</td>
                                     <td>সোমবার </td>
                                     <td>৪-৩৮ মি.</td>
@@ -197,7 +222,7 @@
                                 </tr>
                                 <!-- row 15 -->
                                 <tr>
-                                    <td>১৫</td>
+                                    <th>১৫</th>
                                     <td>২৬ মার্চ</td>
                                     <td>মঙ্গলবার</td>
                                     <td>৪-৩৬ মি.</td>
@@ -206,7 +231,7 @@
                                 </tr>
                                 <!-- row 16 -->
                                 <tr>
-                                    <td>১৬</td>
+                                    <th>১৬</th>
                                     <td>২৭ মার্চ</td>
                                     <td>বুধবার</td>
                                     <td>৪-৩৫ মি.</td>
@@ -215,7 +240,7 @@
                                 </tr>
                                 <!-- row 17 -->
                                 <tr>
-                                    <td>১৭</td>
+                                    <th>১৭</th>
                                     <td>২৮ মার্চ</td>
                                     <td>বৃহস্পতিবার</td>
                                     <td>৪-৩৪ মি.</td>
@@ -224,7 +249,7 @@
                                 </tr>
                                 <!-- row 18 -->
                                 <tr>
-                                    <td>১৮</td>
+                                    <th>১৮</th>
                                     <td>২৯ মার্চ</td>
                                     <td>শুক্রবার</td>
                                     <td>৪-৩৩ মি.</td>
@@ -233,7 +258,7 @@
                                 </tr>
                                 <!-- row 19 -->
                                 <tr>
-                                    <td>১৯</td>
+                                    <th>১৯</th>
                                     <td>৩০ মার্চ</td>
                                     <td>শনিবার</td>
                                     <td>৪-৩১ মি.</td>
@@ -242,7 +267,7 @@
                                 </tr>
                                 <!-- row 20 -->
                                 <tr>
-                                    <td>২০</td>
+                                    <th>২০</th>
                                     <td>৩১ মার্চ</td>
                                     <td>রবিবার</td>
                                     <td>৪-৩০ মি.</td>
@@ -251,7 +276,7 @@
                                 </tr>
                                 <!-- row 21 -->
                                 <tr>
-                                    <td>২১</td>
+                                    <th>২১</th>
                                     <td>০১ এপ্রিল</td>
                                     <td>সোমবার</td>
                                     <td>৪-২৯ মি.</td>
@@ -260,7 +285,7 @@
                                 </tr>
                                 <!-- row 22 -->
                                 <tr>
-                                    <td>২২</td>
+                                    <th>২২</th>
                                     <td>০২ এপ্রিল</td>
                                     <td>মঙ্গলবার</td>
                                     <td>৪-২৮ মি.</td>
@@ -269,7 +294,7 @@
                                 </tr>
                                 <!-- row 23 -->
                                 <tr>
-                                    <td>২৩</td>
+                                    <th>২৩</th>
                                     <td>০৩ এপ্রিল</td>
                                     <td>বুধবার</td>
                                     <td>৪-২৭ মি.</td>
@@ -278,7 +303,7 @@
                                 </tr>
                                 <!-- row 24 -->
                                 <tr>
-                                    <td>২৪</td>
+                                    <th>২৪</th>
                                     <td>০৪ এপ্রিল</td>
                                     <td>বৃহস্পতিবার</td>
                                     <td>৪-২৬ মি.</td>
@@ -287,7 +312,7 @@
                                 </tr>
                                 <!-- row 25 -->
                                 <tr>
-                                    <td>২৫</td>
+                                    <th>২৫</th>
                                     <td>০৫ এপ্রিল</td>
                                     <td>শুক্রবার</td>
                                     <td>৪-২৪ মি.</td>
@@ -296,7 +321,7 @@
                                 </tr>
                                 <!-- row 26 -->
                                 <tr>
-                                    <td>২৬</td>
+                                    <th>২৬</th>
                                     <td>০৬ এপ্রিল</td>
                                     <td>শনিবার</td>
                                     <td>৪-২৪ মি.</td>
@@ -305,7 +330,7 @@
                                 </tr>
                                 <!-- row 27 -->
                                 <tr>
-                                    <td>২৭</td>
+                                    <th>২৭</th>
                                     <td>০৭ এপ্রিল</td>
                                     <td>রবিবার</td>
                                     <td>৪-২৩ মি.</td>
@@ -314,7 +339,7 @@
                                 </tr>
                                 <!-- row 28 -->
                                 <tr>
-                                    <td>২৮</td>
+                                    <th>২৮</th>
                                     <td>০৮ এপ্রিল</td>
                                     <td>সোমবার</td>
                                     <td>৪-২২ মি.</td>
@@ -323,7 +348,7 @@
                                 </tr>
                                 <!-- row 29 -->
                                 <tr>
-                                    <td>২৯</td>
+                                    <th>২৯</th>
                                     <td>০৯ এপ্রিল</td>
                                     <td>মঙ্গলবার</td>
                                     <td>৪-২১ মি.</td>
@@ -332,7 +357,7 @@
                                 </tr>
                                 <!-- row 30 -->
                                 <tr>
-                                    <td>৩০</td>
+                                    <th>৩০</th>
                                     <td>১০ এপ্রিল</td>
                                     <td>বুধবার</td>
                                     <td>৪-২০ মি.</td>
@@ -341,6 +366,18 @@
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+                    <div class="mt-10">
+                        <p class="font-hind-siliguri-regular mb-5">রমজান মাসের চাঁদ দেখা সাপেক্ষে এ বছর রোজা শুরু হতে
+                            পারে ১২ বা
+                            ১৩
+                            মার্চ। সে হিসাবে ১২ মার্চ ধরে ঢাকার সাহ্‌রি ও ইফতারের সময়সূচি নির্ধারণ করেছে ইসলামিক
+                            ফাউন্ডেশন। সময়সূচি অনুযায়ী, ১২ মার্চ প্রথম রোজার সাহ্‌রির শেষ সময় ভোর ৪টা ৫১ মিনিট ও ইফতারির
+                            সময় ৬টা ১০ মিনিট।</p>
+                        <p class="font-hind-siliguri-regular">দূরত্ব অনুযায়ী ঢাকার সময়ের সঙ্গে সর্বোচ্চ ৯ মিনিট যোগ করে
+                            অথবা ৯
+                            মিনিট বিয়োগ করে দেশের
+                            বিভিন্ন অঞ্চলের মানুষ সাহ্‌রি ও ইফতার করবেন।</p>
                     </div>
                 </div>
             </div>
