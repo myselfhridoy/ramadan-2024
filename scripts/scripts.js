@@ -1,6 +1,6 @@
 function highlightCurrentRamadan() {
     let currentDate = new Date().toLocaleDateString('en-GB', { timeZone: 'Asia/Dhaka' });
-    console.log(currentDate)
+    // console.log(currentDate)
     const element = document.getElementById(currentDate);
     console.log(element)
     if (element) {
