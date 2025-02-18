@@ -5,6 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const hijriYear = calculateHijriYear(currentDate); // Calculate Hijri year dynamically
     const banglaYear = calculateBanglaYear(currentDate); // Calculate Bangla year dynamically
 
+        // Update the title with dynamic Hijri year
+    const navbarTitle = document.getElementById('title');
+    navbarTitle.textContent = `মাহে রমজান ${toBengaliNumber(christianYear)}`;
     // Update the navbar title with dynamic Hijri year
     const navbarTitle = document.getElementById('navbar-title');
     navbarTitle.textContent = `মাহে রমজান ${toBengaliNumber(hijriYear)}`;
