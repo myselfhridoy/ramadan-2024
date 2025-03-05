@@ -5,9 +5,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const hijriYear = calculateHijriYear(currentDate); // Calculate Hijri year dynamically
     const banglaYear = calculateBanglaYear(currentDate); // Calculate Bangla year dynamically
 
-// Update the title dynamically
+    // Update the title dynamically
     const dynamicTitle = document.getElementById('dynamic-title');
     dynamicTitle.textContent = `মাহে রমজান ${toBengaliNumber(christianYear)} - সাহরি ও ইফতারের সময়সূচি`;
+
     // Update the navbar title with dynamic Hijri year
     const navbarTitle = document.getElementById('navbar-title');
     navbarTitle.textContent = `মাহে রমজান ${toBengaliNumber(hijriYear)}`;
@@ -38,6 +39,9 @@ document.addEventListener("DOMContentLoaded", function () {
             const tableBody = document.querySelector('table tbody');
             tableBody.innerHTML = ''; // Clear old data
 
+            const todayFormattedDate = `${String(currentDate.getDate()).padStart(2, '0')}/${String(currentDate.getMonth() + 1).padStart(2, '0')}/${currentDate.getFullYear()}`;
+            let todayData = null;
+
             data.forEach(item => {
                 const row = document.createElement('tr');
                 row.id = item.date; // Set row ID to the date
@@ -50,12 +54,84 @@ document.addEventListener("DOMContentLoaded", function () {
                     <td>${item.iftar_time}</td>
                 `;
                 tableBody.appendChild(row);
+
+                if (item.date === todayFormattedDate) {
+                    todayData = item;
+                }
             });
 
             highlightCurrentRamadan(); // Highlight today's date
-
-            // Update dynamic info paragraphs
             updateDynamicInfo(data);
+
+            if (todayData) {
+                const cardContainer = document.getElementById('today-info-card');
+                if (cardContainer) {
+                    const daysInBengali = ['রবিবার', 'সোমবার', 'মঙ্গলবার', 'বুধবার', 'বৃহস্পতিবার', 'শুক্রবার', 'শনিবার'];
+                    const currentDayBengali = daysInBengali[currentDate.getDay()];
+                    const currentDateBengali = toBengaliNumber(currentDate.getDate());
+                    const currentMonthBengali = toBengaliNumber(currentDate.getMonth() + 1);
+                    const currentYearBengali = toBengaliNumber(currentDate.getFullYear());
+
+                    const card = document.createElement('div');
+                    card.className = 'card p-4 bg-white shadow-md rounded-lg';
+                    card.innerHTML = `
+                        <h2 class="text-xl font-bold mb-2">আজকের তারিখ: ${currentDateBengali}/${currentMonthBengali}/${currentYearBengali}</h2>
+                        <h3 class="text-lg font-semibold mb-2">বার: ${currentDayBengali}</h3>
+                        <p class="mb-2">সেহরির শেষ সময়: ${todayData.sehri_end}</p>
+                        <p class="mb-2">ফজরের সময়: ${todayData.fajr_start}</p>
+                        <p class="mb-2">ইফতারের সময়: ${todayData.iftar_time}</p>
+                        <div id="countdown-container">
+                            <div id="iftar-countdown" class="countdown hidden text-red-600 font-bold mt-2">ইফতারের সময় বাকি <span id="iftar-time-left"></span> মিনিট</div>
+                            <div id="sehri-countdown" class="countdown hidden text-red-600 font-bold mt-2">সেহরির শেষ সময়ের আর <span id="sehri-time-left"></span> মিনিট বাকি</div>
+                        </div>
+                    `;
+                    cardContainer.appendChild(card);
+
+                    function parseTime(timeStr) {
+                        const [hours, minutes] = timeStr.split(':').map(Number);
+                        const date = new Date();
+                        date.setHours(hours, minutes, 0, 0);
+                        return date;
+                    }
+
+                    function updateCountdowns() {
+                        const now = new Date();
+
+                        const iftarTime = parseTime(todayData.iftar_time);
+                        const iftarCountdownStart = new Date(iftarTime.getTime() - 30 * 60 * 1000);
+                        const iftarCountdownElement = document.getElementById('iftar-countdown');
+
+                        if (now >= iftarCountdownStart && now < iftarTime) {
+                            const timeLeft = iftarTime - now;
+                            const totalSeconds = Math.floor(timeLeft / 1000);
+                            const minutes = Math.floor(totalSeconds / 60);
+                            const seconds = totalSeconds % 60;
+                            document.getElementById('iftar-time-left').textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+                            iftarCountdownElement.classList.remove('hidden');
+                        } else {
+                            iftarCountdownElement.classList.add('hidden');
+                        }
+
+                        const sehriEndTime = parseTime(todayData.sehri_end);
+                        const sehriCountdownStart = new Date(sehriEndTime.getTime() - 60 * 60 * 1000);
+                        const sehriCountdownElement = document.getElementById('sehri-countdown');
+
+                        if (now >= sehriCountdownStart && now < sehriEndTime) {
+                            const timeLeft = sehriEndTime - now;
+                            const totalSeconds = Math.floor(timeLeft / 1000);
+                            const minutes = Math.floor(totalSeconds / 60);
+                            const seconds = totalSeconds % 60;
+                            document.getElementById('sehri-time-left').textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+                            sehriCountdownElement.classList.remove('hidden');
+                        } else {
+                            sehriCountdownElement.classList.add('hidden');
+                        }
+                    }
+
+                    setInterval(updateCountdowns, 1000);
+                    updateCountdowns();
+                }
+            }
         })
         .catch(error => {
             console.error('Error loading JSON data:', error);
