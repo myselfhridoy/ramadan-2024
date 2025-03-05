@@ -73,3 +73,27 @@
     font-weight: 400;
     font-style: italic;
 }
+
+#today-info-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+#today-info-card h2, #today-info-card h3 {
+    color: #333333;
+}
+
+#today-info-card p {
+    color: #555555;
+}
+
+.countdown {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
