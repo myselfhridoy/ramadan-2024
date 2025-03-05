@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // Update countdowns every second
                 setInterval(updateCountdowns, 1000);
-                updateCountdowns();
+                updateCountdowns(); // Initial call to check on page load
             }
         })
         .catch(error => {
