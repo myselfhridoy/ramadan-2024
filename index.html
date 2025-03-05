@@ -46,10 +46,16 @@
     <main>
 
 
-        <!-- Add the today-info-card div here -->
-        <section class="today-info-section">
-            <div id="today-info-card" class="mx-auto max-w-3xl p-4"></div>
-        </section>
+        <!-- Add this modal container for the alert-style card -->
+<div id="alert-modal" class="modal hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+    <div class="bg-white p-6 rounded-lg shadow-lg max-w-md text-center relative">
+        <button id="close-alert" class="absolute top-2 right-2 text-red-500 hover:text-red-700">&times;</button>
+        <h2 class="text-xl font-bold mb-4">গুরুত্বপূর্ণ সময় বাকি!</h2>
+        <div id="alert-content">
+            <!-- Countdown content will be dynamically inserted here -->
+        </div>
+    </div>
+</div>
 
         <section class="ramadan-table">
             <div class="text-center px-2">
