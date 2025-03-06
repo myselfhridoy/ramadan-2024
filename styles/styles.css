@@ -75,7 +75,7 @@
 }
 
 /* Modal styles */
-.modal {
+.modala {
     display: none; /* Hidden by default */
     position: fixed;
     z-index: 1000;
@@ -87,11 +87,11 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.modal.hidden {
+.modala.hidden {
     display: none;
 }
 
-.modal div {
+.modala div {
     background-color: #fff;
     margin: auto;
     padding: 20px;
@@ -100,7 +100,7 @@
     max-width: 400px;
 }
 
-.modal h2 {
+.modala h2 {
     color: #333;
     font-size: 1.5rem;
     margin-bottom: 1rem;
