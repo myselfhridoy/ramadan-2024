@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Get the current date
+    // Get the current date and time
     const currentDate = new Date();
     const christianYear = currentDate.getFullYear(); // Current Christian year
     const hijriYear = calculateHijriYear(currentDate); // Calculate Hijri year dynamically
@@ -80,6 +80,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     let adjustedHours = hours;
                     if (isPM && hours < 12) {
                         adjustedHours += 12;
+                    }
+
+                    // Handle 12 AM/PM edge case
+                    if (hours === 12 && !isPM) {
+                        adjustedHours = 0; // 12 AM -> 00:00 in 24-hour format
                     }
 
                     date.setHours(adjustedHours, minutes, 0, 0);
