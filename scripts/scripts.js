@@ -68,8 +68,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 const alertContent = document.getElementById('alert-content');
                 const closeAlertButton = document.getElementById('close-alert');
 
+                // Function to parse time and convert to 24-hour format
                 function parseTime(timeStr, isPM = false) {
-                    const [hours, minutes] = timeStr.split(':').map(Number);
+                    // Convert Bengali numbers to English numbers
+                    const englishTimeStr = toEnglishNumber(timeStr);
+                    const [hours, minutes] = englishTimeStr.split(':').map(Number);
+
                     const date = new Date();
 
                     // Convert to 24-hour format if PM and hours < 12
@@ -179,6 +183,13 @@ function toBengaliNumber(number) {
     const englishNumbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
     const bengaliNumbers = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
     return number.toString().split('').map(digit => bengaliNumbers[englishNumbers.indexOf(digit)]).join('');
+}
+
+// Function to convert Bengali numbers back to English numbers
+function toEnglishNumber(number) {
+    const bengaliNumbers = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
+    const englishNumbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+    return number.toString().split('').map(digit => englishNumbers[bengaliNumbers.indexOf(digit)]).join('');
 }
 
 // Function to highlight today's date in the table
