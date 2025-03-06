@@ -102,6 +102,14 @@ document.addEventListener("DOMContentLoaded", function () {
                     const sehriEndTime = parseTime(todayData.sehri_end, false); // AM for Sehri
                     const sehriCountdownStart = new Date(sehriEndTime.getTime() - 60 * 60 * 1000);
 
+                    console.log({
+                        now,
+                        sehriEndTime,
+                        sehriCountdownStart,
+                        iftarTime,
+                        iftarCountdownStart
+                    });
+
                     // Check if it's within Iftar countdown period
                     if (now >= iftarCountdownStart && now < iftarTime) {
                         const timeLeft = iftarTime - now;
