@@ -68,20 +68,29 @@ document.addEventListener("DOMContentLoaded", function () {
                 const alertContent = document.getElementById('alert-content');
                 const closeAlertButton = document.getElementById('close-alert');
 
-                function parseTime(timeStr) {
+                function parseTime(timeStr, isPM = false) {
                     const [hours, minutes] = timeStr.split(':').map(Number);
                     const date = new Date();
-                    date.setHours(hours, minutes, 0, 0);
+
+                    // Convert to 24-hour format if PM and hours < 12
+                    let adjustedHours = hours;
+                    if (isPM && hours < 12) {
+                        adjustedHours += 12;
+                    }
+
+                    date.setHours(adjustedHours, minutes, 0, 0);
                     return date;
                 }
 
                 function updateCountdowns() {
                     const now = new Date();
 
-                    const iftarTime = parseTime(todayData.iftar_time);
+                    // Parse Iftar time as PM
+                    const iftarTime = parseTime(todayData.iftar_time, true); // PM for Iftar
                     const iftarCountdownStart = new Date(iftarTime.getTime() - 30 * 60 * 1000);
 
-                    const sehriEndTime = parseTime(todayData.sehri_end);
+                    // Parse Sehri end time as AM
+                    const sehriEndTime = parseTime(todayData.sehri_end, false); // AM for Sehri
                     const sehriCountdownStart = new Date(sehriEndTime.getTime() - 60 * 60 * 1000);
 
                     // Check if it's within Iftar countdown period
