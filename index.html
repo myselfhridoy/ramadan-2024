@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title id="dynamic-title">মাহে রমজান</title> <!-- Placeholder for dynamic title -->
+    <title id="dynamic-title">মাহে রমজান</title>
     <!-- Fav Icon -->
     <link rel="icon" href="images/ramadan.png" type="image/x-icon">
 
@@ -15,12 +15,13 @@
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="styles/styles.css"></script>
+
     <!-- Tailwind Script -->
     <script src="https://cdn.tailwindcss.com"></script>
+
     <!-- Daisy UI Script -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+
     <!-- Flowbit -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
 
@@ -30,47 +31,42 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-3DRMXMSJK6');
     </script>
 </head>
 
 <body>
-
     <nav>
         <div class="navbar bg-base-100">
-            <a id="navbar-title" class="btn btn-ghost text-xl font-alkatra text-purple-400">মাহে রমজান </a>
+            <a id="navbar-title" class="btn btn-ghost text-xl font-alkatra text-purple-400">মাহে রমজান</a>
         </div>
     </nav>
 
     <main>
-
-
         <!-- Modal Alert for Countdown -->
-<div id="alert-modal" class="modala hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-    <div class="bg-white p-6 rounded-lg shadow-lg max-w-md text-center relative">
-        <button id="close-alert" class="absolute top-2 right-2 text-red-500 hover:text-red-700">&times;</button>
-        <h2 class="text-xl font-bold mb-4">গুরুত্বপূর্ণ সময় বাকি!</h2>
-        <div id="alert-content">
-            <!-- Countdown content will be dynamically inserted here -->
+        <div id="alert-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+            <div class="bg-white p-6 rounded-lg shadow-lg max-w-md text-center relative">
+                <button id="close-alert" class="absolute top-2 right-2 text-red-500 hover:text-red-700">&times;</button>
+                <h2 class="text-xl font-bold mb-4">গুরুত্বপূর্ণ সময় বাকি!</h2>
+                <div id="alert-content">
+                    <!-- Countdown content will be dynamically inserted here -->
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
         <section class="ramadan-table">
             <div class="text-center px-2">
-                <div class="font-baloo-da flex flex-row justify-between place-items-center my-2 px-5 ">
+                <div class="font-baloo-da flex flex-row justify-between place-items-center my-2 px-5">
                     <div>
                         <!-- The button to open modal -->
-                        <label for="my_modal_7" class="btn text-purple-400">রোজার নিয়ত</label>
+                        <label for="my_modal_7" class="btn text-purple-400">রোজার নিয়ত</label>
 
                         <input type="checkbox" id="my_modal_7" class="modal-toggle" />
                         <div class="modal" role="dialog">
                             <div class="modal-box">
                                 <h3 class="text-lg font-bold text-green-600">রোজার নিয়ত বাংলা</h3>
                                 <p class="py-4 text-white">হে আল্লাহ! আমি আগামীকাল পবিত্র রমজানের রোজা রাখার নিয়ত করছি,
-                                    যা আপনার
-                                    সন্তুষ্টির জন্য ফরজ করা হয়েছে। অতএব,আমার পক্ষ থেকে তা কবুল করুন। নিশ্চয়ই আপনি
+                                    যা আপনার সন্তুষ্টির জন্য ফরজ করা হয়েছে। অতএব, আমার পক্ষ থেকে তা কবুল করুন। নিশ্চয়ই আপনি
                                     সর্বশ্রোতা ও সর্বজ্ঞ।</p>
                             </div>
                             <label class="modal-backdrop" for="my_modal_7">Close</label>
@@ -84,9 +80,8 @@
                         <div class="modal" role="dialog">
                             <div class="modal-box">
                                 <h3 class="text-lg font-bold text-green-600">ইফতারের দোয়া বাংলা</h3>
-                                <p class="py-4 text-white">হে আল্লাহ! আমি আপনার উদ্দেশে রোজা রেখেছি এবং আপনার দেওয়া
-                                    রিজিক দিয়ে
-                                    ইফতার করছি । আপনি আমার রোজা কবুল করুন।</p>
+                                <p class="py-4 text-white">হে আল্লাহ! আমি আপনার উদ্দেশে রোজা রেখেছি এবং আপনার দেওয়া রিজিক দিয়ে
+                                    ইফতার করছি। আপনি আমার রোজা কবুল করুন।</p>
                             </div>
                             <label class="modal-backdrop" for="my_modal_8">Close</label>
                         </div>
@@ -104,7 +99,7 @@
             </div>
             <div>
                 <div class="font-baloo-da font-normal text-lg lg:mx-10 mt-5">
-                    <div class="overflow-x-auto ">
+                    <div class="overflow-x-auto">
                         <table class="table table-xs text-center mx-auto">
                             <!-- head -->
                             <thead class="text-base">
@@ -114,7 +109,7 @@
                                     <th>বার</th>
                                     <th>সাহরি শেষ</th>
                                     <th>ফজর শুরু</th>
-                                    <th>ইফতারের সময়</th>
+                                    <th>ইফতারের সময়</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -129,20 +124,3 @@
                 </div>
             </div>
         </section>
-    </main>
-
-    <footer>
-
-
-        </div>
-        <h3 class="font-baloo-da text-lg text-center m-5 text-white">Designed By <a
-                href="https://www.facebook.com/hridzz420"><span class="tooltip"
-                    data-tip="Hridoy Matber">Hridoy</span></a>
-        </h3>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-    <script src="scripts/scripts.js"></script>
-</body>
-
-</html>
