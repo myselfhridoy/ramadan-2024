@@ -1,272 +1,272 @@
 [
     {
-        "date": "02/03/2025",
+        "date": "19/02/2026",
         "roza": "০১",
-        "month": "02 মার্চ",
+        "month": "১৯ ফেব্রুয়ারি",
+        "day": "বৃহস্পতিবার",
+        "sehri_end": "৫:১২",
+        "fajr_start": "৫:১৫",
+        "iftar_time": "৫:৫৮"
+    },
+    {
+        "date": "20/02/2026",
+        "roza": "০২",
+        "month": "২০ ফেব্রুয়ারি",
+        "day": "শুক্রবার",
+        "sehri_end": "৫:১১",
+        "fajr_start": "৫:১৪",
+        "iftar_time": "৫:৫৮"
+    },
+    {
+        "date": "21/02/2026",
+        "roza": "০৩",
+        "month": "২১ ফেব্রুয়ারি",
+        "day": "শনিবার",
+        "sehri_end": "৫:১১",
+        "fajr_start": "৫:১৪",
+        "iftar_time": "৫:৫৯"
+    },
+    {
+        "date": "22/02/2026",
+        "roza": "০৪",
+        "month": "২২ ফেব্রুয়ারি",
         "day": "রবিবার",
-        "sehri_end": "৫:০৪",
-        "fajr_start": "৫:০৫",
+        "sehri_end": "৫:১০",
+        "fajr_start": "৫:১৩",
+        "iftar_time": "৫:৫৯"
+    },
+    {
+        "date": "23/02/2026",
+        "roza": "০৫",
+        "month": "২৩ ফেব্রুয়ারি",
+        "day": "সোমবার",
+        "sehri_end": "৫:০৯",
+        "fajr_start": "৫:১২",
+        "iftar_time": "৬:০০"
+    },
+    {
+        "date": "24/02/2026",
+        "roza": "০৬",
+        "month": "২৪ ফেব্রুয়ারি",
+        "day": "মঙ্গলবার",
+        "sehri_end": "৫:০৮",
+        "fajr_start": "৫:১১",
+        "iftar_time": "৬:০০"
+    },
+    {
+        "date": "25/02/2026",
+        "roza": "০৭",
+        "month": "২৫ ফেব্রুয়ারি",
+        "day": "বুধবার",
+        "sehri_end": "৫:০৮",
+        "fajr_start": "৫:১১",
+        "iftar_time": "৬:০১"
+    },
+    {
+        "date": "26/02/2026",
+        "roza": "০৮",
+        "month": "২৬ ফেব্রুয়ারি",
+        "day": "বৃহস্পতিবার",
+        "sehri_end": "৫:০৭",
+        "fajr_start": "৫:১০",
+        "iftar_time": "৬:০১"
+    },
+    {
+        "date": "27/02/2026",
+        "roza": "০৯",
+        "month": "২৭ ফেব্রুয়ারি",
+        "day": "শুক্রবার",
+        "sehri_end": "৫:০৬",
+        "fajr_start": "৫:০৯",
         "iftar_time": "৬:০২"
     },
     {
-        "date": "03/03/2025",
-        "roza": "০২",
-        "month": "03 মার্চ",
-        "day": "সোমবার",
-        "sehri_end": "৫:০৩",
-        "fajr_start": "৫:০৪",
-        "iftar_time": "৬:০৩"
-    },
-    {
-        "date": "04/03/2025",
-        "roza": "০৩",
-        "month": "04 মার্চ",
-        "day": "মঙ্গলবার",
-        "sehri_end": "৫:০২",
-        "fajr_start": "৫:০৩",
-        "iftar_time": "৬:০৩"
-    },
-    {
-        "date": "05/03/2025",
-        "roza": "০৪",
-        "month": "05 মার্চ",
-        "day": "বুধবার",
-        "sehri_end": "৫:০১",
-        "fajr_start": "৫:০২",
-        "iftar_time": "৬:০৪"
-    },
-    {
-        "date": "06/03/2025",
-        "roza": "০৫",
-        "month": "06 মার্চ",
-        "day": "বৃহস্পতিবার",
-        "sehri_end": "৫:০০",
-        "fajr_start": "৫:০১",
-        "iftar_time": "৬:০৪"
-    },
-    {
-        "date": "07/03/2025",
-        "roza": "০৬",
-        "month": "07 মার্চ",
-        "day": "শুক্রবার",
-        "sehri_end": "৪:৫৯",
-        "fajr_start": "৫:০০",
-        "iftar_time": "৬:০৫"
-    },
-    {
-        "date": "08/03/2025",
-        "roza": "০৭",
-        "month": "08 মার্চ",
-        "day": "শনিবার",
-        "sehri_end": "৪:৫৮",
-        "fajr_start": "৪:৫৯",
-        "iftar_time": "৬:০৫"
-    },
-    {
-        "date": "09/03/2025",
-        "roza": "০৮",
-        "month": "09 মার্চ",
-        "day": "রবিবার",
-        "sehri_end": "৪:৫৭",
-        "fajr_start": "৪:৫৮",
-        "iftar_time": "৬:০৬"
-    },
-    {
-        "date": "10/03/2025",
-        "roza": "০৯",
-        "month": "10 মার্চ",
-        "day": "সোমবার",
-        "sehri_end": "৪:৫৬",
-        "fajr_start": "৪:৫৭",
-        "iftar_time": "৬:০৬"
-    },
-    {
-        "date": "11/03/2025",
+        "date": "28/02/2026",
         "roza": "১০",
-        "month": "11 মার্চ",
+        "month": "২৮ ফেব্রুয়ারি",
+        "day": "শনিবার",
+        "sehri_end": "৫:০৫",
+        "fajr_start": "৫:০৮",
+        "iftar_time": "৬:০২"
+    },
+    {
+        "date": "01/03/2026",
+        "roza": "১১",
+        "month": "০১ মার্চ",
+        "day": "রবিবার",
+        "sehri_end": "৫:০৫",
+        "fajr_start": "৫:০৮",
+        "iftar_time": "৬:০৩"
+    },
+    {
+        "date": "02/03/2026",
+        "roza": "১২",
+        "month": "০২ মার্চ",
+        "day": "সোমবার",
+        "sehri_end": "৫:০৪",
+        "fajr_start": "৫:০৭",
+        "iftar_time": "৬:০৩"
+    },
+    {
+        "date": "03/03/2026",
+        "roza": "১৩",
+        "month": "০৩ মার্চ",
         "day": "মঙ্গলবার",
-        "sehri_end": "৪:৫৫",
-        "fajr_start": "৪:৫৬",
+        "sehri_end": "৫:০৩",
+        "fajr_start": "৫:০৬",
+        "iftar_time": "৬:০৪"
+    },
+    {
+        "date": "04/03/2026",
+        "roza": "১৪",
+        "month": "০৪ মার্চ",
+        "day": "বুধবার",
+        "sehri_end": "৫:০২",
+        "fajr_start": "৫:০৫",
+        "iftar_time": "৬:০৪"
+    },
+    {
+        "date": "05/03/2026",
+        "roza": "১৫",
+        "month": "০৫ মার্চ",
+        "day": "বৃহস্পতিবার",
+        "sehri_end": "৫:০১",
+        "fajr_start": "৫:০৪",
+        "iftar_time": "৬:০৫"
+    },
+    {
+        "date": "06/03/2026",
+        "roza": "১৬",
+        "month": "০৬ মার্চ",
+        "day": "শুক্রবার",
+        "sehri_end": "৫:০০",
+        "fajr_start": "৫:০৩",
+        "iftar_time": "৬:০৫"
+    },
+    {
+        "date": "07/03/2026",
+        "roza": "১৭",
+        "month": "০৭ মার্চ",
+        "day": "শনিবার",
+        "sehri_end": "৪:৫৯",
+        "fajr_start": "৫:০২",
         "iftar_time": "৬:০৬"
     },
     {
-        "date": "12/03/2025",
-        "roza": "১১",
-        "month": "12 মার্চ",
-        "day": "বুধবার",
-        "sehri_end": "৪:৫৪",
-        "fajr_start": "৪:৫৫",
-        "iftar_time": "৬:০৭"
-    },
-    {
-        "date": "13/03/2025",
-        "roza": "১২",
-        "month": "13 মার্চ",
-        "day": "বৃহস্পতিবার",
-        "sehri_end": "৪:৫৩",
-        "fajr_start": "৪:৫৪",
-        "iftar_time": "৬:০৭"
-    },
-    {
-        "date": "14/03/2025",
-        "roza": "১৩",
-        "month": "14 মার্চ",
-        "day": "শুক্রবার",
-        "sehri_end": "৪:৫২",
-        "fajr_start": "৪:৫৩",
-        "iftar_time": "৬:০৮"
-    },
-    {
-        "date": "15/03/2025",
-        "roza": "১৪",
-        "month": "15 মার্চ",
-        "day": "শনিবার",
-        "sehri_end": "৪:৫১",
-        "fajr_start": "৪:৫২",
-        "iftar_time": "৬:০৮"
-    },
-    {
-        "date": "16/03/2025",
-        "roza": "১৫",
-        "month": "16 মার্চ",
-        "day": "রবিবার",
-        "sehri_end": "৪:৫০",
-        "fajr_start": "৪:৫১",
-        "iftar_time": "৬:০৮"
-    },
-    {
-        "date": "17/03/2025",
-        "roza": "১৬",
-        "month": "17 মার্চ",
-        "day": "সোমবার",
-        "sehri_end": "৪:৪৯",
-        "fajr_start": "৪:৫০",
-        "iftar_time": "৬:০৯"
-    },
-    {
-        "date": "18/03/2025",
-        "roza": "১৭",
-        "month": "18 মার্চ",
-        "day": "মঙ্গলবার",
-        "sehri_end": "৪:৪৮",
-        "fajr_start": "৪:৪৯",
-        "iftar_time": "৬:০৯"
-    },
-    {
-        "date": "19/03/2025",
+        "date": "08/03/2026",
         "roza": "১৮",
-        "month": "19 মার্চ",
-        "day": "বুধবার",
-        "sehri_end": "৪:৪৭",
-        "fajr_start": "৪:৪৮",
-        "iftar_time": "৬:১০"
+        "month": "০৮ মার্চ",
+        "day": "রবিবার",
+        "sehri_end": "৪:৫৮",
+        "fajr_start": "৫:০১",
+        "iftar_time": "৬:০৬"
     },
     {
-        "date": "20/03/2025",
+        "date": "09/03/2026",
         "roza": "১৯",
-        "month": "20 মার্চ",
-        "day": "বৃহস্পতিবার",
-        "sehri_end": "৪:৪৬",
-        "fajr_start": "৪:৪৭",
-        "iftar_time": "৬:১০"
+        "month": "০৯ মার্চ",
+        "day": "সোমবার",
+        "sehri_end": "৪:৫৭",
+        "fajr_start": "৫:০০",
+        "iftar_time": "৬:০৭"
     },
     {
-        "date": "21/03/2025",
+        "date": "10/03/2026",
         "roza": "২০",
-        "month": "21 মার্চ",
+        "month": "১০ মার্চ",
+        "day": "মঙ্গলবার",
+        "sehri_end": "৪:৫৭",
+        "fajr_start": "৪:৫৯",
+        "iftar_time": "৬:০৭"
+    },
+    {
+        "date": "11/03/2026",
+        "roza": "২১",
+        "month": "১১ মার্চ",
+        "day": "বুধবার",
+        "sehri_end": "৪:৫৬",
+        "fajr_start": "৪:৫৮",
+        "iftar_time": "৬:০৭"
+    },
+    {
+        "date": "12/03/2026",
+        "roza": "২২",
+        "month": "১২ মার্চ",
+        "day": "বৃহস্পতিবার",
+        "sehri_end": "৪:৫৫",
+        "fajr_start": "৪:৫৭",
+        "iftar_time": "৬:০৮"
+    },
+    {
+        "date": "13/03/2026",
+        "roza": "২৩",
+        "month": "১৩ মার্চ",
         "day": "শুক্রবার",
-        "sehri_end": "৪:৪৫",
-        "fajr_start": "৪:৪৬",
+        "sehri_end": "৪:৫৪",
+        "fajr_start": "৪:৫৭",
+        "iftar_time": "৬:০৮"
+    },
+    {
+        "date": "14/03/2026",
+        "roza": "২৪",
+        "month": "১৪ মার্চ",
+        "day": "শনিবার",
+        "sehri_end": "৪:৫৩",
+        "fajr_start": "৪:৫৬",
+        "iftar_time": "৬:০৯"
+    },
+    {
+        "date": "15/03/2026",
+        "roza": "২৫",
+        "month": "১৫ মার্চ",
+        "day": "রবিবার",
+        "sehri_end": "৪:৫২",
+        "fajr_start": "৪:৫৫",
+        "iftar_time": "৬:০৯"
+    },
+    {
+        "date": "16/03/2026",
+        "roza": "২৬",
+        "month": "১৬ মার্চ",
+        "day": "সোমবার",
+        "sehri_end": "৪:৫১",
+        "fajr_start": "৪:৫৪",
         "iftar_time": "৬:১০"
     },
     {
-        "date": "22/03/2025",
-        "roza": "২১",
-        "month": "22 মার্চ",
-        "day": "শনিবার",
-        "sehri_end": "৪:৪৪",
-        "fajr_start": "৪:৪৫",
-        "iftar_time": "৬:১১"
-    },
-    {
-        "date": "23/03/2025",
-        "roza": "২২",
-        "month": "23 মার্চ",
-        "day": "রবিবার",
-        "sehri_end": "৪:৪৩",
-        "fajr_start": "৪:৪৪",
-        "iftar_time": "৬:১১"
-    },
-    {
-        "date": "24/03/2025",
-        "roza": "২৩",
-        "month": "24 মার্চ",
-        "day": "সোমবার",
-        "sehri_end": "৪:৪২",
-        "fajr_start": "৪:৪৩",
-        "iftar_time": "৬:১১"
-    },
-    {
-        "date": "25/03/2025",
-        "roza": "২৪",
-        "month": "25 মার্চ",
-        "day": "মঙ্গলবার",
-        "sehri_end": "৪:৪১",
-        "fajr_start": "৪:৪২",
-        "iftar_time": "৬:১২"
-    },
-    {
-        "date": "26/03/2025",
-        "roza": "২৫",
-        "month": "26 মার্চ",
-        "day": "বুধবার",
-        "sehri_end": "৪:৪০",
-        "fajr_start": "৪:৪১",
-        "iftar_time": "৬:১২"
-    },
-    {
-        "date": "27/03/2025",
-        "roza": "২৬",
-        "month": "27 মার্চ",
-        "day": "বৃহস্পতিবার",
-        "sehri_end": "৪:৩৯",
-        "fajr_start": "৪:৪০",
-        "iftar_time": "৬:১৩"
-    },
-    {
-        "date": "28/03/2025",
+        "date": "17/03/2026",
         "roza": "২৭",
-        "month": "28 মার্চ",
-        "day": "শুক্রবার",
-        "sehri_end": "৪:৩৮",
-        "fajr_start": "৪:৩৯",
-        "iftar_time": "৬:১৩"
+        "month": "১৭ মার্চ",
+        "day": "মঙ্গলবার",
+        "sehri_end": "৪:৫০",
+        "fajr_start": "৪:৫৩",
+        "iftar_time": "৬:১০"
     },
     {
-        "date": "29/03/2025",
+        "date": "18/03/2026",
         "roza": "২৮",
-        "month": "29 মার্চ",
-        "day": "শনিবার",
-        "sehri_end": "৪:৩৬",
-        "fajr_start": "৪:৩৭",
-        "iftar_time": "৬:১৪"
+        "month": "১৮ মার্চ",
+        "day": "বুধবার",
+        "sehri_end": "৪:৪৯",
+        "fajr_start": "৪:৫২",
+        "iftar_time": "৬:১০"
     },
     {
-        "date": "30/03/2025",
+        "date": "19/03/2026",
         "roza": "২৯",
-        "month": "30 মার্চ",
-        "day": "রবিবার",
-        "sehri_end": "৪:৩৫",
-        "fajr_start": "৪:৩৬",
-        "iftar_time": "৬:১৪"
+        "month": "১৯ মার্চ",
+        "day": "বৃহস্পতিবার",
+        "sehri_end": "৪:৪৮",
+        "fajr_start": "৪:৫০",
+        "iftar_time": "৬:১১"
     },
     {
-        "date": "31/03/2025",
+        "date": "20/03/2026",
         "roza": "৩০",
-        "month": "31 মার্চ",
-        "day": "সোমবার",
-        "sehri_end": "৪:৩৪",
-        "fajr_start": "৪:৩৫",
-        "iftar_time": "৬:১৫"
+        "month": "২০ মার্চ",
+        "day": "শুক্রবার",
+        "sehri_end": "৪:৪৭",
+        "fajr_start": "৪:৪৯",
+        "iftar_time": "৬:১১"
     }
 ]
